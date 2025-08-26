@@ -11,7 +11,17 @@
 
 ## 📋 Descrição do Projeto
 
-Este projeto implementa um sistema inteligente de controle de qualidade para chapas de aço inoxidável, desenvolvido como parte do Bootcamp de Ciência de Dados e Inteligência Artificial do SENAI. O sistema utiliza técnicas de Machine Learning para detectar e classificar automaticamente defeitos em chapas de aço com base em características extraídas de imagens de superfície.
+Este projeto implementa um sistema inteligente de controle de qualidade para chapas de aço inoxidável, desenvolvido como parte do Bootcamp de Ciência de Dados e Inteligência Artificial do SENAI. 
+
+
+
+![Foto do Projeto GembaGuard](https://github.com/eumoas/GembaGuard/blob/main/docs/images//manuten%C3%A7%C3%A3o.gif?raw=true)
+
+
+
+
+
+O sistema utiliza técnicas de Machine Learning para detectar e classificar automaticamente defeitos em chapas de aço com base em características extraídas de imagens de superfície.
 
 ## 🎯 Objetivos
 

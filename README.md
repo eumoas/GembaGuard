@@ -1,6 +1,5 @@
 
-
-![Descrição]([https://site.com/imagem.jpg](https://github.com/eumoas/GembaGuard/blob/main/docs/images/residencia.jpeg))
+![Foto do Projeto GembaGuard](https://github.com/eumoas/GembaGuard/blob/main/docs/images/residencia.jpeg?raw=true)
 
 # 🔧 Gembaguard - Sistema Inteligente de Previsão de Falhas em Máquinas
 

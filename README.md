@@ -1,4 +1,6 @@
-[!](https://github.com/eumoas/GembaGuard/blob/main/docs/images/residencia.jpeg)
+
+
+![Descrição]([https://site.com/imagem.jpg](https://github.com/eumoas/GembaGuard/blob/main/docs/images/residencia.jpeg))
 
 # 🔧 Gembaguard - Sistema Inteligente de Previsão de Falhas em Máquinas
 

@@ -1,7 +1,7 @@
 
 ![Foto do Projeto GembaGuard](https://github.com/eumoas/GembaGuard/blob/main/docs/images/residencia.jpeg?raw=true)
 
-# 🔧 Gembaguard - Sistema Inteligente de Previsão de Falhas em Máquinas
+#  Gembaguard - Sistema Inteligente de Previsão de Falhas em Máquinas
 
 
 

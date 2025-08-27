@@ -42,7 +42,8 @@ O sistema utiliza técnicas de Machine Learning para detectar e classificar auto
 
 ## 📊 Dataset
 
-O dataset contém 3.390 amostras com 31 características extraídas de imagens de superfície das chapas:
+O dataset contém 35.260 amostras com 14 características extraídas de informações coletadas a partir de dispositivos IoT sensorizando atributos
+básicos de cada máquina.
 
 - **Características geométricas**: coordenadas, área, perímetro
 - **Características de luminosidade**: valores mínimos, máximos e soma
@@ -53,6 +54,44 @@ O dataset contém 3.390 amostras com 31 características extraídas de imagens d
 - **falha_3**: 649 amostras
 - **falha_6**: 806 amostras  
 - **sem_falha**: 1.935 amostras
+
+
+### Parâmetros do Processo
+
+- **id_produto**: Identificador único do produto (combinação da variável tipo e um número)
+
+- **tipo**: Tipo de produto/máquina (L / M / H)
+
+- **temperatura_ar**: Temperatura do ar no ambiente (K)
+
+- **temperatura_processo**: Temperatura do processo (K)
+
+- **umidade_relativa**: Umidade relativa do ar (%)
+
+- **velocidade_rotacional**: Velocidade rotacional da máquina em rotações por minuto (RPM)
+
+- **torque**: Torque da máquina em Nm
+
+- **desgaste_da_ferramenta**: Duração do uso da ferramenta em minutos]
+
+
+ ### Identificação
+
+- **id**: Identificador das amostras do banco
+
+### Classes de Defeitos
+
+- **falha_maquina**: Indica se houve falha na máquina (1) ou não (0)
+
+- **FDF**: Falha por desgaste da ferramenta (1) ou não (0)
+
+- **FDC**: Falha por dissipação de calor (1) ou não (0)
+
+- **FP**: Falha por potência (1) ou não (0)
+
+- **FTE**: Falha por tensão excessiva (1) ou não (0)
+
+- **FA**: Falha aleatória (1) ou não (0)
 
 ## 🚀 Metodologia (CRISP-DM)
 

@@ -1,17 +1,21 @@
 
 ![Foto do Projeto GembaGuard](https://github.com/eumoas/GembaGuard/blob/main/docs/images/residencia.jpeg?raw=true)
 
-#  Gembaguard - Sistema Inteligente de Previsão de Falhas em Máquinas
+#  GEMBAGUARD - SISTEMA INTELIGENTE DE MANUTENÇÃO PREDITIVA
 
 
+## 📋 Entendimento do negócio
 
-## 🚀 Como Executar
-
-...
+A manutenção preditiva permite a detecção de problemas antes de ocorrerem
+falhas através do monitoramento de desempenho e condições de máquinas e
+equipamentos em tempo real. Isso significa evitar paradas imprevistas que causam
+perda de produção e gastos adicionais com manutenção corretiva, ajudando a
+prolongar a vida útil dos ativos. 
 
 ## 📋 Descrição do Projeto
 
-Este projeto implementa um sistema inteligente de controle de qualidade para chapas de aço inoxidável, desenvolvido como parte do Bootcamp de Ciência de Dados e Inteligência Artificial do SENAI. 
+
+Este projeto implementa um sistema inteligente fazendo uso de técnicas de machine learning. Foi desenvolvido como parte do Bootcamp de Ciência de Dados e Inteligência Artificial do UniSenai. 
 
 
 
@@ -19,9 +23,7 @@ Este projeto implementa um sistema inteligente de controle de qualidade para cha
 
 
 
-
-
-O sistema utiliza técnicas de Machine Learning para detectar e classificar automaticamente defeitos em chapas de aço com base em características extraídas de imagens de superfície.
+.
 
 ## 🎯 Objetivos
 

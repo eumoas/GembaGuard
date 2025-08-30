@@ -1,18 +1,29 @@
 
+![Foto do Projeto GembaGuard](https://github.com/eumoas/GembaGuard/blob/main/docs/images/residencia.jpeg?raw=true)
 
-# 🔧 Gembaguard - Sistema Inteligente de Previsão de Falhas em Máquinas
-
-![Diagrama do Projeto](/home/moas/GembaGuard/docs/images/residencia.jpeg)
-
+#  GEMBAGUARD - SISTEMA INTELIGENTE DE MANUTENÇÃO PREDITIVA
 
 
-## 🚀 Como Executar
+## 📋 Entendimento do negócio
 
-...
+A manutenção preditiva permite a detecção de problemas antes de ocorrerem
+falhas através do monitoramento de desempenho e condições de máquinas e
+equipamentos em tempo real. Isso significa evitar paradas imprevistas que causam
+perda de produção e gastos adicionais com manutenção corretiva, ajudando a
+prolongar a vida útil dos ativos. 
 
 ## 📋 Descrição do Projeto
 
-Este projeto implementa um sistema inteligente de controle de qualidade para chapas de aço inoxidável, desenvolvido como parte do Bootcamp de Ciência de Dados e Inteligência Artificial do SENAI. O sistema utiliza técnicas de Machine Learning para detectar e classificar automaticamente defeitos em chapas de aço com base em características extraídas de imagens de superfície.
+
+Este projeto implementa um sistema inteligente fazendo uso de técnicas de machine learning. Foi desenvolvido como parte do Bootcamp de Ciência de Dados e Inteligência Artificial do UniSenai. 
+
+
+
+![Foto do Projeto GembaGuard](https://github.com/eumoas/GembaGuard/blob/main/docs/images//manuten%C3%A7%C3%A3o.gif?raw=true)
+
+
+
+.
 
 ## 🎯 Objetivos
 
@@ -33,7 +44,8 @@ Este projeto implementa um sistema inteligente de controle de qualidade para cha
 
 ## 📊 Dataset
 
-O dataset contém 3.390 amostras com 31 características extraídas de imagens de superfície das chapas:
+O dataset contém 35.260 amostras com 14 características extraídas de informações coletadas a partir de dispositivos IoT sensorizando atributos
+básicos de cada máquina.
 
 - **Características geométricas**: coordenadas, área, perímetro
 - **Características de luminosidade**: valores mínimos, máximos e soma
@@ -44,6 +56,44 @@ O dataset contém 3.390 amostras com 31 características extraídas de imagens d
 - **falha_3**: 649 amostras
 - **falha_6**: 806 amostras  
 - **sem_falha**: 1.935 amostras
+
+
+### Parâmetros do Processo
+
+- **id_produto**: Identificador único do produto (combinação da variável tipo e um número)
+
+- **tipo**: Tipo de produto/máquina (L / M / H)
+
+- **temperatura_ar**: Temperatura do ar no ambiente (K)
+
+- **temperatura_processo**: Temperatura do processo (K)
+
+- **umidade_relativa**: Umidade relativa do ar (%)
+
+- **velocidade_rotacional**: Velocidade rotacional da máquina em rotações por minuto (RPM)
+
+- **torque**: Torque da máquina em Nm
+
+- **desgaste_da_ferramenta**: Duração do uso da ferramenta em minutos]
+
+
+ ### Identificação
+
+- **id**: Identificador das amostras do banco
+
+### Classes de Defeitos
+
+- **falha_maquina**: Indica se houve falha na máquina (1) ou não (0)
+
+- **FDF**: Falha por desgaste da ferramenta (1) ou não (0)
+
+- **FDC**: Falha por dissipação de calor (1) ou não (0)
+
+- **FP**: Falha por potência (1) ou não (0)
+
+- **FTE**: Falha por tensão excessiva (1) ou não (0)
+
+- **FA**: Falha aleatória (1) ou não (0)
 
 ## 🚀 Metodologia (CRISP-DM)
 

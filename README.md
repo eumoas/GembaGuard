@@ -1,7 +1,7 @@
 
 ![Foto do Projeto GembaGuard](https://github.com/eumoas/GembaGuard/blob/main/docs/images/residencia.jpeg?raw=true)
 
-#  GEMBAGUARD - SISTEMA INTELIGENTE DE MANUTENÇÃO PREDITIVA
+#  SENTINELA - SISTEMA INTELIGENTE DE MANUTENÇÃO PREDITIVA
 
 
 ## Entendimento do negócio

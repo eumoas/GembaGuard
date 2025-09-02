@@ -136,25 +136,77 @@ básicos de cada máquina.
 - Aplicação de SMOTE para balanceamento de classes
 
 ### 4. Modelagem
-Três algoritmos foram implementados e comparados:
 
-#### Logistic Regression
-- Accuracy: 73.01%
-- Precision (Macro): 75.19%
-- Recall (Macro): 77.87%
-- F1-Score (Macro): 75.35%
+--- TREINANDO MODELO PARA 'FDF' ---
+   -> Desbalanceamento: 0.20%
+   -> Iniciando otimização com RandomizedSearchCV...
+   -> Otimização concluída.
+   -> Melhores parâmetros: {'n_estimators': 300, 'min_samples_split': 5, 'min_samples_leaf': 4, 'max_depth': 15}
+   -> Treinamento concluído.
 
-#### Random Forest
-- Accuracy: 78.47%
-- Precision (Macro): 78.29%
-- Recall (Macro): 78.01%
-- F1-Score (Macro): 78.15%
+   -> Top 5 Features Mais Importantes:
+                      feature  importance
+       desgaste_da_ferramenta    0.195314
+            fadiga_ferramenta    0.171228
+desgaste_da_ferramenta_zscore    0.164009
+                taxa_desgaste    0.108770
+              indice_anomalia    0.050689
 
-#### XGBoost**Melhor Modelo**
-- Accuracy: 79.35%
-- Precision (Macro): 79.10%
-- Recall (Macro): 79.11%
-- F1-Score (Macro): 79.10%
+--- TREINANDO MODELO PARA 'FDC' ---
+   -> Desbalanceamento: 0.63%
+   -> Iniciando otimização com RandomizedSearchCV...
+   -> Otimização concluída.
+   -> Melhores parâmetros: {'n_estimators': 300, 'min_samples_split': 5, 'min_samples_leaf': 4, 'max_depth': 15}
+   -> Treinamento concluído.
+
+   -> Top 5 Features Mais Importantes:
+                     feature  importance
+       velocidade_rotacional    0.167808
+velocidade_rotacional_zscore    0.164738
+                indice_calor    0.113889
+       temperatura_ar_zscore    0.099470
+           delta_temperatura    0.097961
+
+--- TREINANDO MODELO PARA 'FP' ---
+   -> Poucos casos positivos. Usando Random Forest sem otimização.
+   -> Treinamento concluído.
+
+   -> Top 5 Features Mais Importantes:
+              feature  importance
+      indice_anomalia    0.168730
+         indice_calor    0.103251
+temperatura_ar_zscore    0.101483
+        torque_zscore    0.099874
+    delta_temperatura    0.075381
+
+--- TREINANDO MODELO PARA 'FTE' ---
+   -> Desbalanceamento: 0.48%
+   -> Iniciando otimização com RandomizedSearchCV...
+   -> Otimização concluída.
+   -> Melhores parâmetros: {'n_estimators': 300, 'min_samples_split': 10, 'min_samples_leaf': 4, 'max_depth': 15}
+   -> Treinamento concluído.
+
+   -> Top 5 Features Mais Importantes:
+          feature  importance
+    torque_zscore    0.182477
+           torque    0.137436
+  stress_mecanico    0.114316
+    taxa_desgaste    0.076134
+potencia_estimada    0.072039
+
+--- TREINANDO MODELO PARA 'FA' ---
+   -> Poucos casos positivos. Usando Random Forest sem otimização.
+   -> Treinamento concluído.
+
+   -> Top 5 Features Mais Importantes:
+                    feature  importance
+temperatura_processo_zscore    0.208998
+      temperatura_ar_zscore    0.169291
+       temperatura_processo    0.140855
+             temperatura_ar    0.093323
+              torque_zscore    0.069939
+
+
 
 ### 5. Avaliação
 - Validação cruzada com 5 folds

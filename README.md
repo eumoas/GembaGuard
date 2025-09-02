@@ -257,27 +257,6 @@ O projeto é dividido em um fluxo de trabalho sequencial de cinco etapas, com ca
 
 ## Como Executar
 
-Perfeito. Um arquivo README.md bem escrito é a porta de entrada do seu projeto no GitHub. Ele não só explica o que o projeto faz, mas também guia os usuários sobre como executá-lo.
-
-Aqui está um modelo de README.md que você pode copiar e colar no seu repositório. Ele está completo, claro e foi feito para o público acadêmico, como você pediu. Ele inclui as instruções de como rodar cada script na ordem certa.
-
-GembaGuard: Sistema de Manutenção Preditiva Multi-Label
-Este projeto é uma solução de machine learning para a manutenção preditiva de equipamentos industriais. O sistema, batizado de GembaGuard, é capaz de prever cinco tipos de falhas em um ambiente multi-label, onde uma máquina pode apresentar mais de um problema ao mesmo tempo. A solução foi desenvolvida com foco em dados desbalanceados e na criação de um pipeline de data science completo e reprodutível.
-
-## Sumário do Projeto
-O projeto é dividido em um fluxo de trabalho sequencial de cinco etapas, com cada script gerando os artefatos necessários para o próximo.
-
-1_entendimento.py: Análise Exploratória e Limpeza Inicial.
-
-2_preparacao.py: Engenharia de Features e Transformação de Dados.
-
-3_modelagem.py: Treinamento e Otimização de Modelos.
-
-4_avaliacao.py: Avaliação de Performance e Geração de Relatórios.
-
-5_deploy
-
-## Como executar
 
 ## Pré-requisitos
 Certifique-se de que o Python (versão 3.10 ou superior) e o pip estão instalados em sua máquina. Para gerenciar as dependências do projeto, recomendamos o uso de um ambiente virtual (venv).

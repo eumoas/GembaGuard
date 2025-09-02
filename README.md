@@ -209,9 +209,37 @@ temperatura_processo_zscore    0.208998
 
 
 ### 5. Avaliação
-- Validação cruzada com 5 folds
-- Foco em métricas Precision e Recall conforme solicitado
-- XGBoost apresentou melhor desempenho geral
+
+
+Modelo para FDC (Falha por Dissipação de Calor):
+
+Performance: Este foi o modelo com a melhor performance. Ele atingiu um F1-score de 0.04, o mais alto de todos. Embora o valor ainda seja baixo, ele conseguiu fazer previsões válidas, com uma precision de 0.02 e um recall de 0.18.
+
+Conclusão: O algoritmo RandomForest usado para esta falha conseguiu aprender o suficiente para fazer algumas previsões corretas. É um modelo fraco, mas é o melhor que tivemos até agora.
+
+Modelo para FDF (Falha por Desgaste da Ferramenta):
+
+Performance: O modelo alcançou um recall perfeito de 1.00, mas com uma precision de 0.00.
+
+Conclusão: Isso é um sinal de que o modelo está prevendo 1 (falha) para todas as amostras para não perder nenhuma falha real. Ele é extremamente sensível, mas completamente impreciso, o que o torna inútil.
+
+Modelo para FTE (Falha por Tensão Excessiva):
+
+Performance: O modelo teve um recall altíssimo de 0.97, mas uma precision de 0.01.
+
+Conclusão: O modelo para FTE tem o mesmo problema do modelo para FDF: ele é extremamente sensível, mas a falta de precisão torna suas previsões inviáveis na prática.
+
+Modelos para FP e FA (Falhas Raras):
+
+Performance: Para ambas as falhas, o support é 0, e todas as métricas são 0.00.
+
+Conclusão: Os algoritmos para estas classes não foram capazes de encontrar nenhum caso positivo, o que nos impede de avaliar seu desempenho. Isso reforça a ideia de que a abordagem para estas falhas deve ser diferente, talvez com a detecção de anomalias.
+
+Conclusão: O Melhor Algoritmo e o Caminho a Seguir
+Com base nos resultados, o RandomForest teve o melhor desempenho. No entanto, o F1-score de 0.04 ainda é muito baixo, e a performance geral do modelo ainda não é suficiente para um ambiente de produção.
+
+A análise mostra que o nosso principal desafio agora é aumentar a precisão do modelo. A alta sensibilidade (recall) já está lá para algumas classes, mas a falta de precisão é o que está causando o baixo F1-score. O próximo passo é focar em estratégias que penalizem mais os falsos positivos, para que o modelo aprenda a ser mais seletivo em suas previsões.
+
 
 ## Como Executar
 

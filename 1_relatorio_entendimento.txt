@@ -1,0 +1,16 @@
+Resumo da Análise Inicial
+==================================================
+Dimensões do Dataset: 35260 linhas, 15 colunas
+
+Contagem de Tipos de Dados:
+  - object: 7 colunas
+  - float64: 6 colunas
+  - int64: 1 colunas
+  - bool: 1 colunas
+
+Valores Faltantes por Coluna:
+  - desgaste_da_ferramenta: 952 (2.70%)
+  - velocidade_rotacional: 751 (2.13%)
+  - torque: 623 (1.77%)
+  - temperatura_ar: 616 (1.75%)
+  - temperatura_processo: 599 (1.70%)

@@ -1,0 +1,7 @@
+RELATÓRIO DE ENTENDIMENTO DOS DADOS
+==================================================
+
+Total de amostras: 35,260
+Total de colunas: 15
+Falhas identificadas: []
+Valores faltantes: 3541

@@ -240,27 +240,122 @@ Com base nos resultados, o RandomForest teve o melhor desempenho. No entanto, o 
 
 A análise mostra que o nosso principal desafio agora é aumentar a precisão do modelo. A alta sensibilidade (recall) já está lá para algumas classes, mas a falta de precisão é o que está causando o baixo F1-score. O próximo passo é focar em estratégias que penalizem mais os falsos positivos, para que o modelo aprenda a ser mais seletivo em suas previsões.
 
+## Sumário do Projeto
+O projeto é dividido em um fluxo de trabalho sequencial de cinco etapas, com cada script gerando os artefatos necessários para o próximo.
+
+1_entendimento.py: Análise Exploratória e Limpeza Inicial.
+
+2_preparacao.py: Engenharia de Features e Transformação de Dados.
+
+3_modelagem.py: Treinamento e Otimização de Modelos.
+
+4_avaliacao.py: Avaliação de Performance e Geração de Relatórios.
+
+5_deploy.py: Modelo para aplicação
+
+
 
 ## Como Executar
 
-### Preparação dos Dados
-```bash
-python data_preparation.py
-```
+Perfeito. Um arquivo README.md bem escrito é a porta de entrada do seu projeto no GitHub. Ele não só explica o que o projeto faz, mas também guia os usuários sobre como executá-lo.
 
-### 2. Treinamento dos Modelos
-```bash
-python model_training.py
-```
+Aqui está um modelo de README.md que você pode copiar e colar no seu repositório. Ele está completo, claro e foi feito para o público acadêmico, como você pediu. Ele inclui as instruções de como rodar cada script na ordem certa.
 
-### 3. Geração de Visualizações
-```bash
-python data_visualization.py
-```
+GembaGuard: Sistema de Manutenção Preditiva Multi-Label
+Este projeto é uma solução de machine learning para a manutenção preditiva de equipamentos industriais. O sistema, batizado de GembaGuard, é capaz de prever cinco tipos de falhas em um ambiente multi-label, onde uma máquina pode apresentar mais de um problema ao mesmo tempo. A solução foi desenvolvida com foco em dados desbalanceados e na criação de um pipeline de data science completo e reprodutível.
 
-### 4. Executar Aplicação Streamlit
-```bash
-streamlit run streamlit_app.py
+## Sumário do Projeto
+O projeto é dividido em um fluxo de trabalho sequencial de cinco etapas, com cada script gerando os artefatos necessários para o próximo.
+
+1_entendimento.py: Análise Exploratória e Limpeza Inicial.
+
+2_preparacao.py: Engenharia de Features e Transformação de Dados.
+
+3_modelagem.py: Treinamento e Otimização de Modelos.
+
+4_avaliacao.py: Avaliação de Performance e Geração de Relatórios.
+
+5_deploy
+
+## Como executar
+
+## Pré-requisitos
+Certifique-se de que o Python (versão 3.10 ou superior) e o pip estão instalados em sua máquina. Para gerenciar as dependências do projeto, recomendamos o uso de um ambiente virtual (venv).
+
+1. Configuração do Ambiente
+Navegue até a pasta do projeto no seu terminal e execute os seguintes comandos para criar e ativar o ambiente virtual:
+
+Bash
+
+python3 -m venv venv
+source venv/bin/activate
+2. Instalação das Dependências
+Com o ambiente virtual ativado, instale todas as bibliotecas necessárias com um único comando:
+
+Bash
+
+pip install pandas scikit-learn imbalanced-learn iterative-stratification hyperopt xgboost lightgbm catboost ydata_profiling streamlit
+Como Executar o Projeto
+Siga as instruções para rodar cada script na ordem correta, usando o comando python dentro do seu ambiente virtual ativado.
+
+Etapa 1: Entendimento dos Dados
+Este script realiza uma análise exploratória inicial, gera um relatório (.txt) e salva um arquivo de dados (.pkl) para a próxima etapa.
+
+Bash
+
+python 1_entendimento.py
+Etapa 2: Preparação dos Dados
+Este script faz a limpeza dos dados, trata os valores ausentes e cria as novas features que serão usadas na modelagem.
+
+Bash
+
+python 2_preparacao.py
+Etapa 3: Modelagem
+Aqui, os modelos são treinados e otimizados para cada tipo de falha, gerando os modelos (.pkl) que serão usados na avaliação e na aplicação.
+
+Bash
+
+python 3_modelagem.py
+Etapa 4: Avaliação
+Esta etapa carrega os modelos treinados e avalia sua performance em um novo conjunto de dados.
+
+Bash
+
+python 4_avaliacao.py
+Etapa 5: Aplicação de Deploy (Streamlit)
+Para executar a aplicação web e fazer previsões em novos dados, use o comando abaixo. Uma janela do navegador será aberta com a interface do projeto.
+
+Bash
+
+streamlit run app.py
+Artefatos do Projeto
+O pipeline irá gerar os seguintes arquivos, que você deve incluir no seu repositório:
+
+1_relatorio_entendimento.txt
+
+1_profiling_report.html
+
+1_distribuicao_features.png
+
+1_matriz_correlacao_bruta.png
+
+1_distribuicao_falhas.png
+
+2_features_criadas.png
+
+2_matriz_correlacao_final.png
+
+3_modelos_treinados.pkl
+
+3_standard_scaler.pkl
+
+4_matrizes_confusao.png
+
+4_metricas_por_falha.png
+
+4_curvas_roc_pr.png
+
+4_distribuicao_probabilidades.png
 ```
 
 ## Resultados e Insights para as personas
